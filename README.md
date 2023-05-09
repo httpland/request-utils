@@ -76,6 +76,10 @@ assertEquals(isRequest(null), false);
 
 ## withHeader
 
+Return an instance with the provided `Request` replacing the specified header.
+
+There are no side effects on the original `Request`.
+
 ```ts
 import { withHeader } from "https://deno.land/x/request_utils@$VERSION/with_header.ts";
 import { assert } from "https://deno.land/std/testing/asserts.ts";
